@@ -1,0 +1,181 @@
+/*Reyn Hisamoto
+Dropdown menu from https://www.w3schools.com/howto/howto_css_dropdown.asp
+*/
+
+
+
+body {
+background-color: #EDCBCB;
+display: block;
+
+}
+
+
+h1 {
+font-family: Verdana, Times, serif;
+text-align: center;
+background-color: #EDCBCB;
+}
+
+img {
+margin-right: auto;
+margin-left: auto;
+display: block;
+border-image: 10px;
+}
+
+
+div{
+margin: auto;
+
+}
+
+#quantity {
+size: 100px;
+
+}
+
+h2 {
+font-family: 'Times New Roman', Times, serif;
+align-self: center;
+text-align: center;
+
+}
+
+textarea {
+margin: auto;
+display: block;
+
+}
+
+div{
+margin: auto;
+}
+
+
+
+#Order {
+text-align: center;
+margin-top: 20px;
+margin-right: auto;
+margin-left: auto;
+display: block;
+font-size: 32px;
+background-color: #E68787;
+padding: 15px 32px;
+border-color: #E68787;
+
+}
+
+.topping{
+    font-size: 24px;
+}
+
+table{
+margin: auto;
+display: block;
+background-color:#E68787;
+margin-top: 20px;
+padding: 20px;
+max-width: 400px;
+}
+
+ul {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+
+#toppingTable{
+    height: 250px;
+}
+
+select{
+width: 50px;
+}
+
+.complete{
+display: none;
+}
+
+.orders{
+align-self: center;
+margin-left: 100px;
+}
+
+.complete {
+    background-color: #FFFFFF;
+    padding: 10px;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+
+}
+
+#monthbtn{
+    text-align: center;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+#thankyou{
+    text-align: center;
+}
+.completeinfo{
+    text-indent: 10%;
+}
+
+.monthlist {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.month {
+position: relative;
+display: block;
+margin: auto;
+width: 150px;
+height: 150px;
+overflow-y: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.monthlist {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 150px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.monthlist a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+
+
+/* Change color of dropdown links on hover */
+.monthlist a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.month:hover .monthlist {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.month:hover .monthbtn {background-color: #3e8e41;}
+

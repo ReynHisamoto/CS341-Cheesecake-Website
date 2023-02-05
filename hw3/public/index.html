@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--Reyn Hisamoto-->
+
+<html>
+<head>
+    <h1>Cheesecake Order Form</h1>
+    <link rel="stylesheet" href="stylesheets/CS341_hw1.css">
+    <script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+ </script>
+
+ <script src="javascripts/cheesecake-order.js"> 
+    
+ </script>
+</head>
+
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+    width="200"
+    height="200"
+    alt="">
+    
+
+
+    <table id="toppingTable" class="topping">
+        <thead>
+            <td><h2 class="topping">Quantity Topping:</h2></td>
+        </thead>
+
+        <tbody>
+            
+            
+            <td>
+                <select name="quantity" id="quantity" class="topping">
+                    <option value="1" class="topping">1</option>
+                    <option value="2" class="topping">2</option>
+                    <option value="3" class="topping">3</option>
+                </select>
+                
+                
+            </td>
+
+            <td>
+                <div> 
+                    <input type="radio" name="topping" class="topping "id="plain">
+                    <label for="plain" class="topping">Plain</label>
+                </div>
+              
+                <div>
+                    <input type="radio" name="topping" id="cherry" class="topping">
+                    <label for="cherry" class="topping">Cherry</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="topping" id="chocolate" class="topping">
+                    <label for="chocolate" class="topping">Chocolate</label>
+                </div>
+                
+            </td>
+        </tbody>
+    </table>
+    
+    
+    
+
+
+
+    
+
+    <div>
+        <h2 class="notes" id="notesText">Notes:</h2>
+        <textarea name="notes" id="notes" cols="50" rows="5" 
+        placeholder="Enter any special instructions here"></textarea>
+    </div>
+   
+
+
+
+    <br>
+    <button id="Order">Order</button>
+    <br>
+
+    <table>
+        <tbody>
+            <td>
+                <div class="month">
+                    <label for="month">Orders For:</label>
+                    <button class="monthbtn" id="monthbtn">Jan</button>
+                    <div class="monthlist">
+                        <a id="Jan">Jan</a>
+                        <a id="Feb">Feb</a>
+                        <a id="Mar">Mar</a>
+                        <a id="Apr">Apr</a>
+                        <a id="May">May</a>
+                        <a id="Jun">Jun</a>
+                        <a id="Jul">Jul</a>
+                        <a id="Aug">Aug</a>
+                        <a id="Sep">Sep</a>
+                        <a id="Oct">Oct</a>
+                        <a id="Nov">Nov</a>
+                        <a id="Dec">Dec</a>
+                    </div> 
+                </div>
+            </td>
+
+            <td>
+                <ul>
+                    <li>11 cherry</li>
+                    <li>17 chocolate</li>
+                    <li>31 plain</li>
+                </ul>
+            </td>
+        </tbody>
+    </table>
+    
+
+    
+
+    <div class="complete">
+        <p id="thankyou">Thank You! Your order has been placed</p>
+        <div class="completeinfo">
+            <p id="orderTopping">Toppings: None</p>
+
+            <p id="orderQuantity">Quantity: None</p>
+
+            <p id="orderNotes">Notes: None</p>
+        </div>
+        
+    </div>
+    
+  
+</body>
+</html>
